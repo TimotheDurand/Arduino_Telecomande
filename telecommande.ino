@@ -180,16 +180,9 @@ void loop() {
       Serial.println("Bouton inconnu");
     }
 
-    IrReceiver.resume(); // prêt pour le prochain signal
+    IrReceiver.resume();
   }
 
   // Different Mode
   mode__bouton_5 (flag1,flag2,flag3,flag4);
 }
-
-
-//ON : 0xBA45FF00 
-// 1 : 0xF30CFF00
-// 2 : 0xE718FF00
-// 3 : 0xA15EFF00
-// 4 : 0xF708FF00
